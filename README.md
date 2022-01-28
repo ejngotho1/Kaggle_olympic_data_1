@@ -34,6 +34,8 @@
 
 ##### Listed only top 9 countries out of 205. USA has won the most medals in each medal category and most total medals.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ### 15. List down total gold, silver and bronze medals won by each country corresponding to each olympic games.
 -- need medals ( gold, silver, bronze)
 
@@ -48,8 +50,24 @@
 
 ### 16.  Identify which country won the most gold, most silver and most bronze medals in each olympic games.
 --need country
+
 --need medals(gold,silver,bronze)
+
 --need games
+
+  ###### These two queries will give me the desired outcome. I used CASE statement to PIVOT the medal rows so I can have each on its column
+  ###### Using Window function FIRST_VALUE, I am able to find the top country in each category grouped by games.
+  ###### By concatenating the country First_value and Medal count First_value, I am able to get both first values i.e country and total medals
+
+![image](https://user-images.githubusercontent.com/57301554/151224975-10f83c06-8e48-426e-bc76-1ddca36a7a19.png)
+
+![image](https://user-images.githubusercontent.com/57301554/151224496-ef55b4a2-c0b8-4bf6-a923-015f2dc82a1c.png)
+![image](https://user-images.githubusercontent.com/57301554/151226240-ae2564b7-dcd0-4a4a-b31b-040a1a0d70e3.png)
+
+##### The results show each game and the country that won the highest number of medals in each category (Gold, Silver, Bronze)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
