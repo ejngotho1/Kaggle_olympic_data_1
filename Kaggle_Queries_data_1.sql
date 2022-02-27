@@ -81,6 +81,7 @@ From t3
 Where rnk <= 5
 --------------------------------------------------------------------------------------------------------
 --14. List down total gold, silver and bronze medals won by each country.
+--this should list all countries and the medals they won
 
 with t1 as (
      --using this CTE to PIVOT medal rows into Columns
